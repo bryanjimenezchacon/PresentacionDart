@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      video, canvas {
+        margin-top: 25px;
+        width: 200px;
+        height: 112px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <video poster="helloworld.png" id="video-canvas-fancy" controls>
+      <source src="Chrome_ImF.webm" type='video/webm; codecs="vp8, vorbis"'></source>
+	  <source src="Chrome_ImF.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+      <source src="Chrome_ImF.ogv" type='video/ogg; codecs="theora, vorbis"'></source>
+    
+	</video>
+    <canvas id="canvas-copy-fancy"></canvas>
+    <canvas id="canvas-draw-fancy"></canvas>
+
+    <script type="application/dart" src="video.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
